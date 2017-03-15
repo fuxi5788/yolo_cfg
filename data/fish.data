@@ -1,0 +1,6 @@
+classes= 7
+train  = data/train_fish.txt
+valid  = data/train_fish.txt
+names = data/fish.names
+backup = backup/
+
