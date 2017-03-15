@@ -21,10 +21,10 @@ from scipy.misc import imread
 
 
 #file_path = r'C:\Users\jiang_y\Documents\MachineLearning\Kaggle\Fish\train_anno\cfg_yoyo\bb_json.pickle'
-file_path = 'data/bb_json.pickle'
-#with open(file_path, 'wb') as f:
-#    pickle.dump([bb_json], f) 
-with open(file_path, 'rb') as f:
+file_path = 'bb_json.pickle'
+#with open(file_path, 'wb') as f:           # use 'wb' for python 3 and 'w' for python 2
+#    pickle.dump([bb_json], f,protocol=2) 
+with open(file_path, 'r') as f:
     bb_json = pickle.load(f)[0]
     
 
